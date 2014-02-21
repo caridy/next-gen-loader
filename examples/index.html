@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>next gen loader</title>
+    <script src="../tmp/es5/PromisePolyfill.js"></script>
+    <script src="../tmp/es5/MapSetWeakMapPolyfill.js"></script>
+    <script src="../tmp/es5/LoaderPolyfill.js"></script>
+    <script src="../tmp/es5/yloader.js"></script>
+    <script>
+    assertEq = function (a, b) { console.log(a === b); }
+    var l = new Loader();
+    var m1 = new Module({}),
+        m2 = new Module({});
+    l.set("water", m1);
+    l.set("water", m2);
+    assertEq(l.get("water"), m2);
+    </script>
+  </head>
+  <body>
+    Testing loader
+  </body>
+</html>

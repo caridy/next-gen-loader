@@ -1,0 +1,26 @@
+{
+  "name": "next-gen-loader",
+  "version": "0.0.1",
+  "description": "Next Generation ES Loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "ypromise": "~0.2.2",
+    "js-loader": "git://github.com/caridy/js-loaders.git#npm-ready",
+    "harmony-collections": "~0.3.8"
+  },
+  "devDependencies": {
+    "es6ify": "~0.4.8",
+    "matchdep": "~0.3.0",
+    "grunt": "~0.4.2",
+    "grunt-es6-module-transpiler": "~0.6.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}
