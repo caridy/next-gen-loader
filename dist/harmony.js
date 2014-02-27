@@ -3747,7 +3747,7 @@
   }
   global.forOf = forOf; // Since for( ... of ... ) can't be shimmed w/o a transpiler.
 
-}(this));
+}(typeof global !== 'undefined' ? global : this));
 
 Set.prototype['@@iterator'] = Set.prototype[Symbol.iterator];
 Map.prototype['@@iterator'] = Map.prototype[Symbol.iterator];
