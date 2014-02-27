@@ -3,8 +3,8 @@ module.exports = {
         src: 'node_modules/ypromise/promise.js',
         dest: 'tmp/es5/PromisePolyfill.js'
     },
-    MapSetWeakMap: {
-        src: 'node_modules/harmony-collections/harmony-collections.js',
-        dest: 'tmp/es5/MapSetWeakMapPolyfill.js'
+    JSPolyfills: {
+        src: 'node_modules/js-polyfills/harmony.js',
+        dest: 'tmp/es5/HarmonyPolyfill.js'
     }
 };

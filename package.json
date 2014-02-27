@@ -10,8 +10,8 @@
   "license": "BSD",
   "dependencies": {
     "ypromise": "~0.2.2",
-    "js-loader": "git://github.com/caridy/js-loaders.git#npm-ready",
-    "harmony-collections": "~0.3.8"
+    "js-loaders": "git://github.com/caridy/js-loaders.git#npm-ready",
+    "js-polyfills": "git://github.com/caridy/polyfill.git#npm-ready"
   },
   "devDependencies": {
     "es6ify": "~0.4.8",

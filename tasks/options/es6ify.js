@@ -1,4 +1,9 @@
 module.exports = {
+    deps: {
+        files: {
+            'tmp/es5/LoaderPolyfill.js': 'node_modules/js-loaders/Loader.js'
+        }
+    },
     lib: {
         files: [{
             expand: true,
@@ -6,10 +11,5 @@ module.exports = {
             src: ['**/*.js'],
             dest: 'tmp/es5/'
         }]
-    },
-    deps: {
-        files: {
-            'tmp/es5/LoaderPolyfill.js': 'node_modules/js-loaders/Loader.js'
-        }
     }
 };

@@ -1,7 +1,9 @@
 module.exports = {
     dist: {
         files: {
-            'dist/next-gen-loader.min.js': ['dist/next-gen-loader.js']
+            'dist/loader.min.js': ['dist/loader.js'],
+            'dist/promise.min.js': ['dist/promise.js'],
+            'dist/harmony.min.js': ['dist/harmony.js']
         }
     }
 };
