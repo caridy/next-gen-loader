@@ -9,7 +9,7 @@
   "author": "",
   "license": "BSD",
   "dependencies": {
-    "ypromise": "git://github.com/caridy/ypromise.git",
+    "ypromise": "^0.2.3",
     "js-loaders": "git://github.com/caridy/js-loaders.git#npm-ready",
     "js-polyfills": "git://github.com/caridy/polyfill.git#npm-ready"
   },
