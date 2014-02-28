@@ -15,11 +15,11 @@ http://yuilibrary.com/license/
     }
     /* istanbul ignore next */
     if (typeof define === 'function' && define.amd) {
-        define(built);
+        define(factory);
     }
     global.PromisePolyfill = built;
     global.Promise || (global.Promise = built);
-}(typeof global !== 'undefined' ? global : this, function () {
+}(typeof global !== 'undefined' ? global : /* istanbul ignore next */ this, function () {
 
     function isArray(obj) {
         return Object.prototype.toString.call(obj) === '[object Array]';
@@ -439,7 +439,7 @@ http://yuilibrary.com/license/
             if (status === 'pending' || status === 'accepted') {
                 this._result = reason;
                 this._status = 'rejected';
-                if (!this._errbacks.length) {Promise._log('Promise rejected but no error handlers were registered to it', 'warn');}
+                if (!this._errbacks.length) {Promise._log('Promise rejected but no error handlers were registered to it', 'info');}
             }
 
             if (this._status === 'rejected') {
